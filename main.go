@@ -39,8 +39,7 @@ func readStdin(subscribers chan chan []byte) {
 		for {
 			line, _, err := reader.ReadLine()
 			if err != nil {
-				fmt.Println(err)
-				return
+				log.Fatalln(err)
 			}
 			stdin <- line
 		}
