@@ -1,4 +1,4 @@
 nozzle
 ======
 
-HTTP → WebSocket
+STDIN → WebSocket
